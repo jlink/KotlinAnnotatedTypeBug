@@ -29,10 +29,7 @@ tasks.withType<Test> {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
-        freeCompilerArgs = listOf(
-			"-Xemit-jvm-type-annotations"
-		)
-        jvmTarget = "16"
+        jvmTarget = "11"
         javaParameters = true // This makes the bug appear
     }
 }
